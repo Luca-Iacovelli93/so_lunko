@@ -38,14 +38,7 @@ typedef struct s_tile
 typedef struct s_wall_img
 {
 	void	*block;
-	void	*up_left;
-	void	*up;
-	void	*up_right;
-	void	*right;
-	void	*down_right;
-	void	*down;
-	void	*down_left;
-	void	*left;
+	void	*wall;
 }	t_wall_img;
 
 /* Collectables animation info */

@@ -2,6 +2,8 @@
 
 void	open_wallimgs_up(t_game *game);
 void	open_wallimgs_down(t_game *game);
+void	open_wallino(t_game *game);
+
 
 static void	open_player_imgs(t_game *game)
 {
@@ -59,8 +61,9 @@ static void	open_door_imgs(t_game *game)
 /* Opens with the mlx all images needed in the game */
 void	open_images(t_game *game)
 {
-	open_wallimgs_up (game);
-	open_wallimgs_down (game);
+	open_wallino(game);
+	// open_wallimgs_up (game);
+	// open_wallimgs_down (game);
 	open_player_imgs(game);
 	open_collect_imgs(game);
 	open_enemy_imgs(game);
