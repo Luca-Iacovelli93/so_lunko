@@ -49,8 +49,6 @@ static void	anim_setup(t_game *game)
 	game->player.action_frames = 10;
 	game->collects_imgs.anim_frames = 25;
 	game->effect.frames = 7;
-	game->enemy_imgs.basic_anim = 16;
-	game->enemy_imgs.follow_anim = 6;
 }
 
 /* Initialize the <game> struct */

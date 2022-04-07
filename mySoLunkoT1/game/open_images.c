@@ -30,24 +30,6 @@ static void	open_collect_imgs(t_game *game)
 			&game->img_size.x, &game->img_size.y);
 }
 
-static void	open_enemy_imgs(t_game *game)
-{
-	game->enemy_imgs.basic_01 = mlx_xpm_file_to_image(game->mlx,
-			"sprites/enemy_01.xpm",
-			&game->img_size.x, &game->img_size.y);
-	game->enemy_imgs.basic_02 = mlx_xpm_file_to_image(game->mlx,
-			"sprites/enemy_02.xpm",
-			&game->img_size.x, &game->img_size.y);
-	game->enemy_imgs.basic_current = game->enemy_imgs.basic_01;
-	game->enemy_imgs.follow_01 = mlx_xpm_file_to_image(game->mlx,
-			"sprites/enemy_03.xpm",
-			&game->img_size.x, &game->img_size.y);
-	game->enemy_imgs.follow_02 = mlx_xpm_file_to_image(game->mlx,
-			"sprites/enemy_04.xpm",
-			&game->img_size.x, &game->img_size.y);
-	game->enemy_imgs.follow_current = game->enemy_imgs.follow_01;
-}
-
 static void	open_door_imgs(t_game *game)
 {
 	game->door_open_img = mlx_xpm_file_to_image(game->mlx,
@@ -62,10 +44,7 @@ static void	open_door_imgs(t_game *game)
 void	open_images(t_game *game)
 {
 	open_wallino(game);
-	// open_wallimgs_up (game);
-	// open_wallimgs_down (game);
 	open_player_imgs(game);
 	open_collect_imgs(game);
-	open_enemy_imgs(game);
 	open_door_imgs(game);
 }

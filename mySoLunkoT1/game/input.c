@@ -1,6 +1,6 @@
 #include "../so_long.h"
 
-void	move_enemies(t_game *game);
+// void	move_enemies(t_game *game);
 void	move_to_empty(t_game *game, t_tile *tile);
 void	move_to_exit(t_game *game, t_tile *tile);
 void	pick_collect(t_game *game, t_tile *tile);
@@ -29,14 +29,8 @@ t_bool	move_to(t_game *game, t_tile *tile)
 		pick_collect(game, tile);
 	else if (tile->type == EXIT && game->collects <= 0)
 		move_to_exit(game, tile);
-	else if (tile->type == ENEMY || tile->type == FOLLOWER)
-	{
-		move_to_enemy(game, tile);
-		return (FALSE);
-	}
 	else
 		return (FALSE);
-	move_enemies(game);
 	return (TRUE);
 }
 

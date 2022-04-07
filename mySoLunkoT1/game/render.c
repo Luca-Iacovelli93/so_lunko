@@ -22,12 +22,6 @@ static void	draw_image(t_tile tile, t_game game, t_vector pos)
 	else if (tile.type == PLAYER)
 		mlx_put_image_to_window(game.mlx, game.window,
 			game.player.current_img, pos.x, pos.y);
-	else if (tile.type == ENEMY)
-		mlx_put_image_to_window(game.mlx, game.window,
-			game.enemy_imgs.basic_current, pos.x, pos.y);
-	else if (tile.type == FOLLOWER)
-		mlx_put_image_to_window(game.mlx, game.window,
-			game.enemy_imgs.follow_current, pos.x, pos.y);
 }
 
 /* If the effect counter is less than its animation frames, draws it */

@@ -16,8 +16,6 @@ typedef enum e_tiletype
 	COLLECTABLE = 'C',
 	PLAYER = 'P',
 	EXIT = 'E',
-	ENEMY = 'M',
-	FOLLOWER = 'F'
 }	t_tiletype;
 
 /* Struct for each tile */
@@ -88,19 +86,6 @@ typedef enum e_enemytype
 	FOLLOW_ENEM = 'F'
 }	t_enemyytpe;
 
-/* Enemies animation info */
-typedef struct s_enemy_imgs
-{
-	int		basic_anim;
-	void	*basic_current;
-	void	*basic_01;
-	void	*basic_02;
-	int		follow_anim;
-	void	*follow_current;
-	void	*follow_01;
-	void	*follow_02;
-}	t_enemy_img;
-
 /* Struct to make a list of enemies */
 typedef struct s_enemy
 {
@@ -152,7 +137,6 @@ typedef struct s_game
 	t_vector		img_size;
 	t_wall_img		wall_imgs;
 	t_collect_img	collects_imgs;
-	t_enemy_img		enemy_imgs;
 	void			*door_open_img;
 	void			*door_close_img;
 	t_effect		effect;
