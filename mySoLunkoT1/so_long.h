@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:52:50 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:30:06 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 22:12:11 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,8 +152,6 @@ typedef struct s_game
 	void			*door_open_img;
 	void			*door_close_img;
 	t_effect		effect;
-	void			*red_panel;
-	void			*white_panel;
 }	t_game;
 
 // ---------------------------

@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:13 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:30:16 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 22:16:28 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,6 @@ void	game_init(t_game *game)
 			"so_long");
 	mlx_hook(game->window, 17, 0, end_program, game);
 	open_images(game);
-	game->white_panel = new_panel(game, new_color(254, 254, 254, 0));
-	game->red_panel = new_panel(game, new_color(197, 4, 4, 0));
 }
 
 /* Sets the frames of all animatios */
@@ -60,7 +58,7 @@ static void	anim_setup(t_game *game)
 	game->player.idle_frames = 17;
 	game->player.action_frames = 10;
 	game->collects_imgs.anim_frames = 25;
-	game->effect.frames = 7;
+	// game->effect.frames = 7;
 }
 
 /* Initialize the <game> struct */

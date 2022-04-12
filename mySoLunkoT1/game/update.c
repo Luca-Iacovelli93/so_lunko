@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:44 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:32:39 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 22:10:33 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ int	update(t_game *game)
 {
 	player_animation(&game->player);
 	collec_animation(&game->collects_imgs);
-	// effect_animation(&game->effect);
 	render(*game);
 	return (1);
 }

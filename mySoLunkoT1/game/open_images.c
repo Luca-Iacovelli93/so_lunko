@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:21 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:42:33 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 22:10:48 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@ static void	open_collect_imgs(t_game *game)
 			"sprites/cake-tmp1.xpm",
 			&game->img_size.x, &game->img_size.y);
 	game->collects_imgs.current_img = game->collects_imgs.img_0;
-	game->effect.img = mlx_xpm_file_to_image(game->mlx,
-			"sprites/effect_w.xpm",
-			&game->img_size.x, &game->img_size.y);
 }
 
 static void	open_door_imgs(t_game *game)

@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:38 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:29:01 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 22:10:27 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,6 @@ static void	draw_image(t_tile tile, t_game game, t_vector pos)
 	else if (tile.type == PLAYER)
 		mlx_put_image_to_window(game.mlx, game.window,
 			game.player.current_img, pos.x, pos.y);
-}
-
-/* If the effect counter is less than its animation frames, draws it */
-static void	draw_effect(t_game game)
-{
-	if (game.effect.counter < game.effect.frames)
-		mlx_put_image_to_window(game.mlx, game.window,
-			game.effect.img,
-			game.effect.pos.x, game.effect.pos.y);
 }
 
 /* Writes the number of moves on the window,
@@ -81,7 +72,7 @@ void	render(t_game game)
 		{
 			tile = game.tilemap[y][x];
 			draw_image(tile, game, tile.position);
-			draw_effect(game);
+			// draw_effect(game);
 			x++;
 		}
 		y++;
