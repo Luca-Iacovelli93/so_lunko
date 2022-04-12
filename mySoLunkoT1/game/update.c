@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:44 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 21:02:00 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:32:39 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,11 @@ static void	collec_animation(t_collect_img *img)
 	frame += 1;
 }
 
-static void	effect_animation(t_effect *effect)
-{
-	if (effect->counter < effect->frames)
-		effect->counter++;
-}
+// static void	effect_animation(t_effect *effect)
+// {
+// 	if (effect->counter < effect->frames)
+// 		effect->counter++;
+// }
 
 /* Calculates all animations and render.
 * Called once each frame */
@@ -56,7 +56,7 @@ int	update(t_game *game)
 {
 	player_animation(&game->player);
 	collec_animation(&game->collects_imgs);
-	effect_animation(&game->effect);
+	// effect_animation(&game->effect);
 	render(*game);
 	return (1);
 }

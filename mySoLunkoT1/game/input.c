@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:17 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:53:17 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:38:40 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ void	pick_collect(t_game *game, t_tile *tile);
 void	move_to_enemy(t_game *game, t_tile *tile);
 
 /* Places and starts the "particles" effect */
-void	effect_anim(t_effect *effect, t_vector pos)
-{
-	effect->counter = 0;
-	effect->pos = pos;
-}
+// void	effect_anim(t_effect *effect, t_vector pos)
+// {
+// 	effect->counter = 0;
+// 	effect->pos = pos;
+// }
 
 /* Starts the action pose animation of the player */
-void	action_anim(t_player *player)
-{
-	player->framecount = 0;
-	player->current_img = player->action_img;
-}
+// void	action_anim(t_player *player)
+// {
+// 	player->framecount = 0;
+// 	player->current_img = player->action_img;
+// }
 
 /* Move the player to <tile> doing whats needed based on its type */
 t_bool	move_to(t_game *game, t_tile *tile)
