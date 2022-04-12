@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:58:57 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:58:57 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:08:21 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_wordcount(const char *str, char c)
 
 /* Copys <dstsize> - 1 chars from <src> to <dst>.
 Return the lenght of the string that tried to create. */
-size_t	ft_strlcpy (char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	i;
 
@@ -66,7 +66,7 @@ size_t	ft_strlcpy (char *dst, const char *src, size_t dstsize)
 }
 
 /* Adds <src> to the end of <dst>. <dst> is consider to have <dstsize> bytes */
-size_t	ft_strlcat (char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dst_len;
 	size_t	dst_i;

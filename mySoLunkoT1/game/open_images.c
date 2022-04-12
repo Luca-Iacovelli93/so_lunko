@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:21 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:53:21 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:03:41 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	open_wallimgs_up(t_game *game);
 void	open_wallimgs_down(t_game *game);
 void	open_wallino(t_game *game);
-
 
 static void	open_player_imgs(t_game *game)
 {

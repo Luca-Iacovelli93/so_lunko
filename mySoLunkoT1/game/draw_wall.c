@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:52:58 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:52:58 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:03:22 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_bool	draw_wallino(t_tile tile, t_game game, t_vector pos)
 {
-	if (tile.position.x == 0 || tile.position.y == 0 ||
-		tile.position.x == game.wndw_size.x - IMG_SIZE ||
-		tile.position.y == game.wndw_size.y - IMG_SIZE)
+	if (tile.position.x == 0 || tile.position.y == 0
+		|| tile.position.x == game.wndw_size.x - IMG_SIZE
+		|| tile.position.y == game.wndw_size.y - IMG_SIZE)
 		mlx_put_image_to_window(game.mlx, game.window,
 			game.wall_imgs.wall, pos.x, pos.y);
 	else

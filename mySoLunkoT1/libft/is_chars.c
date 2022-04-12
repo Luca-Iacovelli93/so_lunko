@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:54:30 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:54:30 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:06:28 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int	ft_isprint(int c)
 /* Returns 1 if <c> is consider a space char. 0 if not. */
 int	ft_isspace(int c)
 {
-	if (c == ' ' || c == '\n' || c == '\t' || c == '\v' || c == '\f' || c == '\r')
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\v'
+		|| c == '\f' || c == '\r')
 		return (1);
 	return (0);
 }

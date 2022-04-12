@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:44 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:53:44 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/12 21:02:00 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 
 static void	player_animation(t_player *player)
 {
-	// if (player->current_img == player->action_img
-	// 	&& player->framecount >= player->action_frames)
-	// {
-	// 	player->current_img = player->idle_img_1;
-	// }
-	// else if (player->framecount == player->idle_frames)
 	if (player->framecount == player->idle_frames)
 	{
 		player->current_img = player->idle_img_0;
