@@ -6,13 +6,13 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:44 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/19 20:39:13 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/19 21:31:21 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 
-static void player_anim(t_player *player)
+static void	player_anim(t_player *player)
 {
 	if (player->framecount < player->idle_frames)
 		player->current_img = player->idle_img_0;
@@ -20,9 +20,9 @@ static void player_anim(t_player *player)
 	{
 		player->current_img = player->idle_img_0;
 		player->framecount = 0;
-	} else {
-		player->current_img = player->idle_img_1;
 	}
+	else
+		player->current_img = player->idle_img_1;
 	player->framecount += 1;
 }
 
