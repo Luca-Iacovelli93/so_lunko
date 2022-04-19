@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:38 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 22:10:27 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/19 19:58:54 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void	render(t_game game)
 		{
 			tile = game.tilemap[y][x];
 			draw_image(tile, game, tile.position);
-			// draw_effect(game);
 			x++;
 		}
 		y++;

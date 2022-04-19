@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:54:47 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 20:54:47 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/19 20:04:16 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,5 @@ typedef struct s_mapcheckerdata
 	t_bool		b_exit;
 	t_bool		b_collect;
 }				t_mapcheckerdata;
-
-void	add_enemy(t_game *game, t_enemyytpe type, t_tile *tile);
 
 #endif

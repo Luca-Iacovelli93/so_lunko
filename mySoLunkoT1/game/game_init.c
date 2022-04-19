@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:53:13 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 22:16:28 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/19 20:33:55 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,9 @@ void	game_init(t_game *game)
 /* Sets the frames of all animatios */
 static void	anim_setup(t_game *game)
 {
-	game->player.idle_frames = 17;
-	game->player.action_frames = 10;
+	game->player.idle_frames = 30;
+	game->player.framecount = 0;
+	// game->player.action_frames = 10;
 	game->collects_imgs.anim_frames = 25;
 	// game->effect.frames = 7;
 }

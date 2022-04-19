@@ -6,7 +6,7 @@
 /*   By: liacovel <liacovel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:52:50 by liacovel          #+#    #+#             */
-/*   Updated: 2022/04/12 22:12:11 by liacovel         ###   ########.fr       */
+/*   Updated: 2022/04/19 20:11:09 by liacovel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,26 +88,6 @@ typedef struct s_color
 	int	b;
 	int	a;
 }	t_color;
-
-// ---------- ENEMIES
-
-typedef enum e_enemytype
-{
-	HORIZONTAL_ENEM = 'H',
-	VERTICAL_ENEM = 'V',
-	FOLLOW_ENEM = 'F'
-}	t_enemyytpe;
-
-/* Struct to make a list of enemies */
-typedef struct s_enemy
-{
-	t_enemyytpe			type;
-	int					dir;
-	t_tile				*og_tile;
-	t_tile				*tile;
-	struct s_enemy		*next;
-}	t_enemy;
-
 // ---------- GAME
 
 /* All valid input keys */
@@ -145,7 +125,6 @@ typedef struct s_game
 	int				og_collects;
 	int				collects;
 	int				moves;
-	t_enemy			*enemy_list;
 	t_vector		img_size;
 	t_wall_img		wall_imgs;
 	t_collect_img	collects_imgs;
@@ -170,7 +149,6 @@ void	effect_anim(t_effect *effect, t_vector pos);
 void	action_anim(t_player *player);
 
 void	remove_player(t_game *game);
-void	kill_player(t_game *game, t_vector pos);
 int		reset(t_game *game);
 int		end_program(t_game *game);
 
